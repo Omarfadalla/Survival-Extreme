@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dupj8yfbk5hkf"]
+
+[ext_resource type="PackedScene" uid="uid://bgvp4r1wnj7qs" path="res://Player/player.tscn" id="1_bk3v5"]
+[ext_resource type="PackedScene" uid="uid://cghh4q7f07pe0" path="res://Trees/palm_tree.tscn" id="2_1r4le"]
+
+[node name="Game" type="Node2D" unique_id=221646249]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=552029609]
+offset_left = -390.0
+offset_top = -318.0
+offset_right = 417.0
+offset_bottom = 356.0
+color = Color(0.85979646, 0.9780063, 0.9750077, 1)
+
+[node name="Player" parent="." unique_id=330361035 instance=ExtResource("1_bk3v5")]
+
+[node name="Trees" type="Node2D" parent="." unique_id=363100277]
+y_sort_enabled = true
+
+[node name="PalmTree" parent="Trees" unique_id=920401577 instance=ExtResource("2_1r4le")]
+position = Vector2(144, -53)
+
+[node name="PalmTree2" parent="Trees" unique_id=597553994 instance=ExtResource("2_1r4le")]
+position = Vector2(-253, -52)
+
+[node name="PalmTree3" parent="Trees" unique_id=1643138168 instance=ExtResource("2_1r4le")]
+position = Vector2(-131, 198)
+
+[node name="PalmTree4" parent="Trees" unique_id=1407243447 instance=ExtResource("2_1r4le")]
+position = Vector2(193, 161)

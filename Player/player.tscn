@@ -148,4 +148,8 @@ shape = SubResource("CircleShape2D_gwnis")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1143355259]
 sprite_frames = SubResource("SpriteFrames_lfmf2")
 animation = &"idle"
-frame_progress = 0.34309804
+frame = 2
+frame_progress = 0.1449623
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1060381839]
+zoom = Vector2(3, 3)

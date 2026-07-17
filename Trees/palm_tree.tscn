@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cghh4q7f07pe0"]
+
+[ext_resource type="Texture2D" uid="uid://fswra863g226" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree2_2.png" id="1_jbk5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7efcf"]
+size = Vector2(12, 13.5)
+
+[node name="PalmTree" type="Node2D" unique_id=920401577]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1857968853]
+
+[node name="PalmTree22" type="Sprite2D" parent="StaticBody2D" unique_id=1724218221]
+texture = ExtResource("1_jbk5k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=760635154]
+position = Vector2(0, 18.25)
+shape = SubResource("RectangleShape2D_7efcf")
