@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bgvp4r1wnj7qs" path="res://Player/player.tscn" id="1_bk3v5"]
 [ext_resource type="PackedScene" uid="uid://cghh4q7f07pe0" path="res://Trees/palm_tree.tscn" id="2_1r4le"]
+[ext_resource type="PackedScene" uid="uid://jor3sqptid6n" path="res://mobs/slime_mob.tscn" id="2_7raqb"]
 
 [node name="Game" type="Node2D" unique_id=221646249]
 
@@ -13,6 +14,21 @@ offset_bottom = 356.0
 color = Color(0.85979646, 0.9780063, 0.9750077, 1)
 
 [node name="Player" parent="." unique_id=330361035 instance=ExtResource("1_bk3v5")]
+
+[node name="SlimeMob" parent="Player" unique_id=773878757 instance=ExtResource("2_7raqb")]
+position = Vector2(-137, 70)
+
+[node name="SlimeMob2" parent="Player" unique_id=66850247 instance=ExtResource("2_7raqb")]
+position = Vector2(-134, -71)
+
+[node name="SlimeMob3" parent="Player" unique_id=1461635441 instance=ExtResource("2_7raqb")]
+position = Vector2(137, 61)
+
+[node name="SlimeMob4" parent="Player" unique_id=946006170 instance=ExtResource("2_7raqb")]
+position = Vector2(23, 176)
+
+[node name="SlimeMob5" parent="Player" unique_id=1607432948 instance=ExtResource("2_7raqb")]
+position = Vector2(139, -114)
 
 [node name="Trees" type="Node2D" parent="." unique_id=363100277]
 y_sort_enabled = true
