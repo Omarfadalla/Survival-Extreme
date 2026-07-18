@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ckdgxwnqv3tik"]
+
+[ext_resource type="Texture2D" uid="uid://cp6f36yfs5mml" path="res://Trees Pack/PNG/Assets_separately/Trees_shadow/Moss_tree2.png" id="1_1kkl1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7efcf"]
+size = Vector2(23, 40)
+
+[node name="MossTree" type="Node2D" unique_id=920401577]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1857968853]
+
+[node name="PalmTree22" type="Sprite2D" parent="StaticBody2D" unique_id=1724218221]
+texture = ExtResource("1_1kkl1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=760635154]
+position = Vector2(1.5, 9)
+shape = SubResource("RectangleShape2D_7efcf")

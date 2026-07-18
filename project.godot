@@ -11,9 +11,20 @@ config_version=5
 [application]
 
 config/name="Survival Extreme"
-run/main_scene="uid://dupj8yfbk5hkf"
+run/main_scene="uid://b28s4kabo8asm"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://brc1m7pk0y1jh"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/borderless=true
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 

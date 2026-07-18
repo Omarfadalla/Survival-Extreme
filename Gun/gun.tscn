@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dn07q3dmpeihw"]
 
-[ext_resource type="Texture2D" uid="uid://bo100woj5aboj" path="res://Guns Pack/Guns/3_1.png" id="1_n3g7m"]
 [ext_resource type="Script" uid="uid://b6m31axaw42as" path="res://Gun/gun.gd" id="1_yf33g"]
+[ext_resource type="Texture2D" uid="uid://bgp2uscgilhby" path="res://Gun Pack/full sized/colt m1911.png" id="2_yf33g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yf33g"]
 radius = 112.0
@@ -17,12 +17,13 @@ shape = SubResource("CircleShape2D_yf33g")
 [node name="Weapon Pivot" type="Marker2D" parent="." unique_id=121985510]
 
 [node name="Gun" type="Sprite2D" parent="Weapon Pivot" unique_id=982792763]
-position = Vector2(37, 0)
-texture = ExtResource("1_n3g7m")
+position = Vector2(24, 4)
+scale = Vector2(0.24023436, 0.1875)
+texture = ExtResource("2_yf33g")
 
 [node name="ShootPoint" type="Marker2D" parent="Weapon Pivot/Gun" unique_id=1966183857]
 unique_name_in_owner = true
-position = Vector2(12, -2)
+position = Vector2(24.975616, -26.666672)
 
 [node name="Timer" type="Timer" parent="." unique_id=2007024571]
 wait_time = 0.5

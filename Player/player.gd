@@ -3,6 +3,10 @@ extends CharacterBody2D
 signal Health_depleted
 var health = 100.0
 
+
+func _ready() -> void:
+	$AnimatedSprite2D.play("Completed")
+	pass
 func _physics_process(delta: float) -> void:
 
 	var direction = Input.get_vector("move_left","move_right","move_up","move_down")
@@ -20,17 +24,18 @@ func _physics_process(delta: float) -> void:
 		%ProgressBar.value = health
 		if health <= 0.0 :
 			Health_depleted.emit()
+			$AnimatedSprite2D.play("Dead")
 
 	move_and_slide()
 
 	pass
 
 func play_idle_animation():
-	$AnimatedSprite2D.play("idle")
+	$AnimatedSprite2D.play("Idle")
 	pass
 
 func play_walk_animation():
-	$AnimatedSprite2D.play("walk")
+	$AnimatedSprite2D.play("Run")
 	pass
 	
 
