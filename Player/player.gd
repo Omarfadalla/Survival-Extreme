@@ -1,21 +1,28 @@
 extends CharacterBody2D
 
+signal Health_depleted
+var health = 100.0
 
+func _physics_process(delta: float) -> void:
 
-func _physics_process(_delta: float) -> void:
-	
 	var direction = Input.get_vector("move_left","move_right","move_up","move_down")
 	velocity = direction * 300 
-	
+
 	if velocity.length() > 0 :
 		play_walk_animation()
 	else:
 		play_idle_animation()
 
+	const DAMAGE_RATE = 5
+	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
+	if overlapping_mobs.size() >0 :
+		health -= DAMAGE_RATE * overlapping_mobs.size() * delta
+		%ProgressBar.value = health
+		if health <= 0.0 :
+			Health_depleted.emit()
 
+	move_and_slide()
 
-
-	move_and_slide() 
 	pass
 
 func play_idle_animation():
@@ -25,4 +32,7 @@ func play_idle_animation():
 func play_walk_animation():
 	$AnimatedSprite2D.play("walk")
 	pass
+	
+
+	
 	

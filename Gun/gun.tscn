@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b6m31axaw42as" path="res://Gun/gun.gd" id="1_yf33g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yf33g"]
-radius = 206.03883
+radius = 112.0
 
 [node name="Gun" type="Area2D" unique_id=1102430784]
 collision_layer = 0
