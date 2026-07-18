@@ -4,20 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://ccl4aih0aiu0c" path="res://Guns Pack/Bullets/7.png" id="2_0qjqd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvnxm"]
-size = Vector2(16, 10)
+size = Vector2(10, 5.5)
 
 [node name="bullet" type="Area2D" unique_id=252326326]
+top_level = true
 collision_layer = 0
 collision_mask = 3
 script = ExtResource("1_6wip1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1874246156]
-position = Vector2(0, 1)
+position = Vector2(0, -0.25)
 shape = SubResource("RectangleShape2D_xvnxm")
 
 [node name="Projectile" type="Sprite2D" parent="." unique_id=190981090]
-position = Vector2(-4.7683716e-07, 0.9999999)
-scale = Vector2(4.062501, 3.2083333)
+position = Vector2(7.1525574e-07, -1.1920929e-07)
+scale = Vector2(2.2812505, 1.6041666)
 texture = ExtResource("2_0qjqd")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://c1qlajfurnjs2"]
+
+[ext_resource type="Script" uid="uid://djhc61l4k8xpw" path="res://Explosions/explosion.gd" id="1_fqbvr"]
+[ext_resource type="Texture2D" uid="uid://b2gma08wd33p4" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas1.png" id="1_oafuo"]
+[ext_resource type="Texture2D" uid="uid://dakwlsrcmmmuf" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas2.png" id="2_fqbvr"]
+[ext_resource type="Texture2D" uid="uid://5l4slsdkgg45" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas3.png" id="3_nkdhl"]
+[ext_resource type="Texture2D" uid="uid://b5ke105pr3ki0" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas4.png" id="4_bjcyn"]
+[ext_resource type="Texture2D" uid="uid://cfdrhglw1tf0y" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas5.png" id="5_4t3cr"]
+[ext_resource type="Texture2D" uid="uid://d158fpgb62gbj" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas6.png" id="6_3a4mr"]
+[ext_resource type="Texture2D" uid="uid://dveiyem8y2733" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas7.png" id="7_s5t44"]
+[ext_resource type="Texture2D" uid="uid://blil034a0j54f" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas8.png" id="8_gm6nq"]
+[ext_resource type="Texture2D" uid="uid://drt6gxl1tjwfx" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas9.png" id="9_xvhp3"]
+[ext_resource type="Texture2D" uid="uid://d0s0p30bgg15q" path="res://Explosion Pack/PNG/Explosion_gas/Explosion_gas10.png" id="10_p1iuo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xq5tr"]
+atlas = ExtResource("1_oafuo")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pmt3"]
+atlas = ExtResource("2_fqbvr")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hacxs"]
+atlas = ExtResource("3_nkdhl")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00r7l"]
+atlas = ExtResource("4_bjcyn")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bq417"]
+atlas = ExtResource("5_4t3cr")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xl7i0"]
+atlas = ExtResource("6_3a4mr")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tpv3d"]
+atlas = ExtResource("7_s5t44")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6kbg"]
+atlas = ExtResource("8_gm6nq")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsotn"]
+atlas = ExtResource("9_xvhp3")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsx81"]
+atlas = ExtResource("10_p1iuo")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3hbvg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xq5tr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pmt3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hacxs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00r7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bq417")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xl7i0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tpv3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6kbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsotn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rsx81")
+}],
+"loop": false,
+"name": &"explosion",
+"speed": 13.0
+}]
+
+[node name="Explosion" type="Node2D" unique_id=1155106822]
+script = ExtResource("1_fqbvr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=358017107]
+position = Vector2(-5, -27)
+sprite_frames = SubResource("SpriteFrames_3hbvg")
+animation = &"explosion"
+autoplay = "explosion"
+frame = 9
+frame_progress = 1.0
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

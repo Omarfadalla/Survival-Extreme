@@ -12,4 +12,10 @@ func Shoot():
 	const BULLET = preload("res://bullet/bullet.tscn")
 	var new_bullet  = BULLET.instantiate()
 	new_bullet.global_position = %ShootPoint.global_position
+	new_bullet.global_rotation = %ShootPoint.global_rotation
 	%ShootPoint.add_child(new_bullet)
+
+
+func _on_timer_timeout() -> void:
+	Shoot()
+	pass # Replace with function body.

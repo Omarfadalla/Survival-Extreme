@@ -8,21 +8,25 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_fsqph"]
 radius = 12.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_woyny"]
+atlas = ExtResource("2_woyny")
+region = Rect2(0, 0, 64, 64)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_iv3hr"]
 atlas = ExtResource("2_woyny")
-region = Rect2(0, 0, 80, 64)
+region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fllxl"]
 atlas = ExtResource("2_woyny")
-region = Rect2(80, 0, 80, 64)
+region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_msksw"]
 atlas = ExtResource("2_woyny")
-region = Rect2(160, 0, 80, 64)
+region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_63opr"]
 atlas = ExtResource("2_woyny")
-region = Rect2(240, 0, 80, 64)
+region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6ulrb"]
 atlas = ExtResource("3_3ikcr")
@@ -83,6 +87,9 @@ region = Rect2(448, 0, 64, 64)
 [sub_resource type="SpriteFrames" id="SpriteFrames_sx16w"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_woyny")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_iv3hr")
 }, {
@@ -163,4 +170,6 @@ shape = SubResource("CircleShape2D_fsqph")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2083175588]
 sprite_frames = SubResource("SpriteFrames_sx16w")
-animation = &"idle"
+animation = &"hurt"
+frame = 3
+frame_progress = 0.4427776
