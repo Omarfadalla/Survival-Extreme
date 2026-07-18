@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://b28s4kabo8asm"]
+
+[ext_resource type="FontFile" uid="uid://bahv1qx0biihf" path="res://GUI Pack/10 Font/CyberpunkCraftpixPixel.otf" id="1_cok42"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8f8xy"]
+bg_color = Color(0.9318973, 0.93189716, 0.93189716, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.18179765, 0.18179768, 0.18179768, 0.6)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m48o8"]
+bg_color = Color(0.3987945, 0.39879236, 0.39879283, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.18179765, 0.18179768, 0.18179768, 0.6)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ra13p"]
+bg_color = Color(0.53900254, 0.53899944, 0.53900033, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.18179765, 0.18179768, 0.18179768, 0.6)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cok42"]
+
+[node name="main_menu" type="Control" unique_id=346084574]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1974157676]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=46244780]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -171.0
+offset_top = -75.0
+offset_right = 171.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 9
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1141891825]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0068854266, 0.0068853837, 0.0068853926, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_cok42")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_8f8xy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m48o8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ra13p")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cok42")
+text = "Start Game"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=2119299693]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0068854266, 0.0068853837, 0.0068853926, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_cok42")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_8f8xy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m48o8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ra13p")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cok42")
+text = "Options"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=995183145]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0068854266, 0.0068853837, 0.0068853926, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_cok42")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_8f8xy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m48o8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ra13p")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cok42")
+text = "Exit"
+
+[node name="Label" type="Label" parent="." unique_id=408930039]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -179.0
+offset_right = 63.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9607843)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 7
+theme_override_fonts/font = ExtResource("1_cok42")
+theme_override_font_sizes/font_size = 55
+text = "Survior Extreme !"
