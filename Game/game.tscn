@@ -6,29 +6,18 @@
 
 [node name="Game" type="Node2D" unique_id=221646249]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=552029609]
-offset_left = -390.0
-offset_top = -318.0
-offset_right = 417.0
-offset_bottom = 356.0
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=25220270]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=552029609]
+anchors_preset = -1
+offset_left = -2311.0
+offset_top = -1687.0
+offset_right = 2426.0
+offset_bottom = 2223.0
 color = Color(0.85979646, 0.9780063, 0.9750077, 1)
 
 [node name="Player" parent="." unique_id=330361035 instance=ExtResource("1_bk3v5")]
-
-[node name="SlimeMob" parent="Player" unique_id=773878757 instance=ExtResource("2_7raqb")]
-position = Vector2(-137, 70)
-
-[node name="SlimeMob2" parent="Player" unique_id=66850247 instance=ExtResource("2_7raqb")]
-position = Vector2(-134, -71)
-
-[node name="SlimeMob3" parent="Player" unique_id=1461635441 instance=ExtResource("2_7raqb")]
-position = Vector2(137, 61)
-
-[node name="SlimeMob4" parent="Player" unique_id=946006170 instance=ExtResource("2_7raqb")]
-position = Vector2(23, 176)
-
-[node name="SlimeMob5" parent="Player" unique_id=1607432948 instance=ExtResource("2_7raqb")]
-position = Vector2(139, -114)
 
 [node name="Trees" type="Node2D" parent="." unique_id=363100277]
 y_sort_enabled = true
@@ -44,3 +33,20 @@ position = Vector2(-131, 198)
 
 [node name="PalmTree4" parent="Trees" unique_id=1407243447 instance=ExtResource("2_1r4le")]
 position = Vector2(193, 161)
+
+[node name="Mobs" type="Node2D" parent="." unique_id=1136592354]
+
+[node name="SlimeMob" parent="Mobs" unique_id=773878757 instance=ExtResource("2_7raqb")]
+position = Vector2(-137, 70)
+
+[node name="SlimeMob2" parent="Mobs" unique_id=66850247 instance=ExtResource("2_7raqb")]
+position = Vector2(-134, -71)
+
+[node name="SlimeMob3" parent="Mobs" unique_id=1461635441 instance=ExtResource("2_7raqb")]
+position = Vector2(137, 61)
+
+[node name="SlimeMob4" parent="Mobs" unique_id=946006170 instance=ExtResource("2_7raqb")]
+position = Vector2(23, 176)
+
+[node name="SlimeMob5" parent="Mobs" unique_id=1607432948 instance=ExtResource("2_7raqb")]
+position = Vector2(139, -114)

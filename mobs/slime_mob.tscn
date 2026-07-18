@@ -295,3 +295,5 @@ shape = SubResource("CircleShape2D_fsqph")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2083175588]
 sprite_frames = SubResource("SpriteFrames_sx16w")
 animation = &"walk"
+frame = 2
+frame_progress = 0.4103452
