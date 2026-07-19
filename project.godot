@@ -18,6 +18,10 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 
 buses/default_bus_layout="uid://brc1m7pk0y1jh"
 
+[autoload]
+
+Global="*uid://d142ha4c0y31b"
+
 [display]
 
 window/size/viewport_width=1920
