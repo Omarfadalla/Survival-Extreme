@@ -1,7 +1,7 @@
 extends Node
 
 var current_round = 1
-var round_duration = 60.0
+var round_duration = 30
 
 var mob_health_multiplier = 1
 var mob_damage_multiplier = 1

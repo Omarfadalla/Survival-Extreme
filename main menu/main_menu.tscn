@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://b28s4kabo8asm"]
 
 [ext_resource type="Script" uid="uid://besyxdyax36k8" path="res://main menu/main_menu.gd" id="1_8f8xy"]
-[ext_resource type="FontFile" path="res://GUI Pack/10 Font/CyberpunkCraftpixPixel.otf" id="1_cok42"]
+[ext_resource type="FontFile" uid="uid://rs8d4ugxsfda" path="res://UI Pack/PixelFont copy.otf" id="1_cok42"]
 [ext_resource type="Texture2D" uid="uid://hdk6rmxsefjc" path="res://UI Pack/32x32-Tilesheet.png" id="3_6fy38"]
 [ext_resource type="FontFile" uid="uid://bnwi7fbiba7bk" path="res://UI Pack/PixelFont.otf" id="3_auhsi"]
 [ext_resource type="Script" uid="uid://cm0omoht3xknb" path="res://main menu/audio_control.gd" id="3_m48o8"]
@@ -90,16 +90,25 @@ thickness = 6
 color = Color(0.35925347, 0.34281337, 0.18168166, 1)
 thickness = 6
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ft5q2"]
+load_path = "res://.godot/imported/32x32-Tilesheet.png-8248c7715cbc2d9dc12165d9c9c49945.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_n30k1"]
-atlas = SubResource("CompressedTexture2D_iohqi")
+atlas = SubResource("CompressedTexture2D_ft5q2")
 region = Rect2(0.033, 103.891, 63.830784, 19.122551)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6o5wd"]
+load_path = "res://.godot/imported/32x32-Tilesheet.png-8248c7715cbc2d9dc12165d9c9c49945.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_asywh"]
-atlas = SubResource("CompressedTexture2D_aw1dh")
+atlas = SubResource("CompressedTexture2D_6o5wd")
 region = Rect2(127.85, 96.153, 64.41184, 26.916534)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f2m40"]
+load_path = "res://.godot/imported/32x32-Tilesheet.png-8248c7715cbc2d9dc12165d9c9c49945.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_kgrjf"]
-atlas = SubResource("CompressedTexture2D_36lwk")
+atlas = SubResource("CompressedTexture2D_f2m40")
 region = Rect2(63.40907, 103.798, 64.44769, 19.267883)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mlgbi"]
@@ -127,16 +136,25 @@ region = Rect2(225.9205, 100.56213, 28.512833, 27.341064)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ssxje"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ssxje"]
+load_path = "res://.godot/imported/32x32-Tilesheet.png-8248c7715cbc2d9dc12165d9c9c49945.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_6o5wd"]
-atlas = SubResource("CompressedTexture2D_ldhbh")
+atlas = SubResource("CompressedTexture2D_ssxje")
 region = Rect2(288.013, 105.759, 32, 32)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f80ax"]
+load_path = "res://.godot/imported/32x32-Tilesheet.png-8248c7715cbc2d9dc12165d9c9c49945.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_f2m40"]
-atlas = SubResource("CompressedTexture2D_driid")
+atlas = SubResource("CompressedTexture2D_f80ax")
 region = Rect2(351.993, 98.081, 32, 32)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8mifg"]
+load_path = "res://.godot/imported/32x32-Tilesheet.png-8248c7715cbc2d9dc12165d9c9c49945.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_f80ax"]
-atlas = SubResource("CompressedTexture2D_5qo5t")
+atlas = SubResource("CompressedTexture2D_8mifg")
 region = Rect2(320.03, 105.756, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8mifg"]

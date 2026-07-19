@@ -2,10 +2,8 @@ extends CharacterBody2D
 
 var health = 1
 var slime_number = 1
-var player 
+var player
 const Explosion = preload("res://Explosions/explosion.tscn") 
-
-
 
 func Play_walk():
 	if slime_number ==1:	
@@ -71,8 +69,8 @@ func _physics_process(_delta: float) -> void:
 
 
 
-func take_damage():
-	health -=1
+func take_damage(amount):
+	health -= amount
 
 	var current_animation = $AnimatedSprite2D.animation
 
@@ -83,7 +81,7 @@ func take_damage():
 	else:
 		$AnimatedSprite2D.play("hurt_3")
 		
-	if health == 0:	
+	if health <= 0:	
 
 		var Smoke = Explosion.instantiate()
 		get_parent().add_child(Smoke)
