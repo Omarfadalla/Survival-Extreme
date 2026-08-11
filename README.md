@@ -1,12 +1,13 @@
 # Survival Extreme Part 1
 
-A brief description of what this project does and why it mas made and incomplete
+A brief description of what this project does !
 
 
 <img width="1398" height="1302" alt="CleanShot 2026-08-09 at 23 40 38@2x" src="https://github.com/user-attachments/assets/9823da82-7e95-4eb0-a6b5-420a115b3fee" />
 
 
 ## Project Overview
+
 
 this project is purely made in Godot 4 engine and features a 2d pixel art game which contains a player a level and slimes with a sruvival style .
 
@@ -20,6 +21,11 @@ slime is fully animated and detects player within an area using area 2d node and
 
 <img width="1356" height="1440" alt="CleanShot 2026-08-09 at 23 40 44@2x" src="https://github.com/user-attachments/assets/4d4aa406-a329-4506-b193-51b61f20b828" />
 
+## The  Tech Stack
+* **Engine Used :** Godot 4.6
+* **Languages :** GDScript and GD shaders (JavaScript)
+* **Assets:** Custom 2D Pixel Art
+
 
 ## Controls
 
@@ -27,10 +33,12 @@ Use WASD for player movement
 
 no need to aim the player shoots automatically
 
-just try to run !
+just try to run from slimes !
 
 <img width="1480" height="1540" alt="CleanShot 2026-08-09 at 23 41 32@2x" src="https://github.com/user-attachments/assets/46ba2d16-b59d-4f59-8a34-04c2d68ad327" />
 
+## Problems I Faced and How I Solved Them:
+I didnt know how to use ui nodes so I checked out how to create a main menu so I tried and searched until I created a basic menu !!
 
 ## Deployment
 
@@ -58,7 +66,9 @@ And Voila! you have made you OWN project!
 ## Feedback
 
 Ai use is declared according to hack Club requirements
+AI was used to help me create an upgrade system but it didnt get fully finished yet as I didn't know how to implement state machines into Godot 
 
+ Check Out The Game On ITCH.IO >> https://omarfadalla.itch.io/survival-extreme-part-1
 made specially for hack club !
 
 If you have any feedback, please reach out to us at github 
