@@ -65,6 +65,20 @@ Click Export Project and choose a destination folder and click Save.
 And Voila! you have made you OWN project!
 ## Feedback
 
+##  How to use
+Open the Godot 4 app: Launch the Godot Editor and click import to import the project. Navigate to the cloned folder and select the project.godot file to import it. Click Import & Edit which wil open the project for you to be able to edit it and make it your own. To run the game press F5 (or click the Play button in the top right) to run the main scene and test the game to ensure it works properly.
+Ai use is declared according to hack Club requirements
+AI was used to help me create an upgrade system but it didnt get fully finished yet as I didn't know how to implement state machines into Godot 
+
+Check Out The Game On ITCH.IO >> https://omarfadalla.itch.io/survival-extreme-part-1
+
+made specially for hack club !
+
+If you have any feedback, please reach out to us at github 
+Click Export Project and choose a destination folder and click Save.
+And Voila! you have made you OWN project!
+## Feedback
+
 Ai use is declared according to hack Club requirements
 AI was used to help me create an upgrade system but it didnt get fully finished yet as I didn't know how to implement state machines into Godot 
 
